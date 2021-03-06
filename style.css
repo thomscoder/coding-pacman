@@ -1,0 +1,92 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+h3, h4 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    
+}
+
+.grid { 
+    margin: 30px auto;
+    width: 560px;
+    height: 560px;
+    border: solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+.path {
+    background-color: white;
+    border: 8px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.walls {
+    background-color: blue;
+    background-image: url(img/texture.png);
+}
+.startGhosts {
+    background-color: black;
+}
+.bonus {
+    background-color: white;
+    border-radius: 50%;
+    border: 4px solid black;
+    box-sizing: border-box;
+}
+
+.pacman {
+  background: conic-gradient(yellow 55deg, transparent 0 125deg, yellow 0);
+  border-radius: 100%;
+  
+  animation: eat .4s linear forwards infinite;
+}
+
+@keyframes eat {
+  0%, 50% { background: conic-gradient(yellow 55deg, transparent 0 125deg, yellow 0); }
+  25% { background: conic-gradient(yellow 55deg, yellow 0);}
+}
+
+.ghost {
+    border-radius: 100% 100% 0 0;
+    box-sizing: border-box;
+}
+.white {
+    border: solid black;
+    background-color: white;
+    /* background: conic-gradient( 
+     white 6deg, white 6deg 18deg, white 18deg 45deg, 
+     white 140deg 60deg, transparent 60deg 220deg, white 200deg); */
+     
+}
+
+.purple {
+    border: solid black;
+    background-color: purple;
+    /* background: conic-gradient( 
+     purple 6deg, purple 6deg 18deg, purple 18deg 45deg, 
+     purple 140deg 110deg, transparent 60deg 220deg, purple 200deg); */
+}
+.blue {
+    border: solid black;
+    background-color: rgb(39, 154, 231);
+     /* background: conic-gradient( 
+     blue 6deg, blue 6deg 18deg, blue 18deg 45deg, 
+     blue 140deg 110deg, transparent 60deg 220deg, blue 200deg); */
+}
+.red {
+    border: solid black;
+    background-color: red;
+    /* background: conic-gradient( 
+     red 6deg, red 6deg 18deg, red 18deg 45deg, 
+     red 140deg 110deg, transparent 60deg 220deg, red 200deg); */
+}
+
+
